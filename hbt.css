@@ -124,6 +124,7 @@ html {
     width: 100%;
     height: 400px;
 }
+/*history content overlay*/
 .overlay1 {
     position: absolute;
     bottom: 100%;
@@ -154,6 +155,7 @@ html {
 .description {
     line-height: 2.5;
 }
+/*geo button*/
 .geo-button {
     padding: 1rem;
     border: none;
@@ -177,6 +179,7 @@ html {
     background-color: var(--black);
     box-shadow: 0 2.5px 10px var(--white);
 }
+/*history text*/
 .history-text {
     background-color: var(--gray);
     color: var(--white);
@@ -220,6 +223,7 @@ html {
     display: flex;
     flex-direction: row;
 }
+/*services options*/
 .location, .meals, .fitness {
     text-align: center;
 }
@@ -386,6 +390,7 @@ html {
     -o-border-radius: 50%;
     margin-top: 12.5px;
 }
+/*guests overlay*/
 .overlay {
     position: absolute;
     bottom: 0;
@@ -423,6 +428,7 @@ html {
     font-size: 32pt;
     padding-top: 1rem;
 }
+/*contact inputs*/
 #name, #email, #message {
     width: 100%;
     padding: 0.5rem 0.5rem 0.5rem 3rem;
@@ -445,10 +451,12 @@ html {
 label[for="email"], label[for="message"] {
     padding-top: 1rem;
 }
+/*inputs focus*/
 #name:focus, #email:focus, #message:focus {
     outline: none;
     box-shadow: 0 0 5px #0000ff;
 }
+/*contact buttons*/
 button[type="submit"], button[type="reset"] {
     padding: 10px;
     border: none;
@@ -482,6 +490,7 @@ button[type="submit"]:hover, button[type="reset"]:hover {
     display: flex;
     flex-direction: row;
 }
+/*contact options*/
 .contact-ways {
     height: 150px;
     color: var(--white);
