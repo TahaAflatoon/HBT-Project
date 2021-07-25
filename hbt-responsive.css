@@ -58,6 +58,7 @@
 .guest1-image, .guest2-image {
     margin: 12.5px auto 0;
 }
+/*guests overlay*/
 .overlay {
     left: 0;
     width: 100%;

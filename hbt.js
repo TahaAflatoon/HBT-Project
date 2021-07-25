@@ -13,6 +13,7 @@ window.addEventListener('scroll', function() {
         document.querySelector('.header').style.opacity = 1;
     }
 });
+
 //Geolocation
 let x = document.getElementById("error");
 function Geolocation() {
@@ -27,6 +28,7 @@ function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
 }
+
 //Modal image
 function Modal() {
     //Get the modal
@@ -47,6 +49,7 @@ function Modal() {
         modal.style.display = "none";
     }
 }
+
 //Scroll indicator
 // When the user scrolls the page, execute myFunction
 function indicator() {
