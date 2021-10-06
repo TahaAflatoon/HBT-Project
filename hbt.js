@@ -14,13 +14,13 @@ window.addEventListener('scroll', function() {
     }
 });
 
-//Geolocation
-let x = document.getElementById("error");
+// Geolocation
+const x = document.querySelector('#error');
 function Geolocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
-    else { 
+    else {
         x.innerHTML = "Geolocation is not supported by this browser.";
 }
 }
@@ -29,36 +29,36 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude;
 }
 
-//Modal image
+// Modal image
 function Modal() {
-    //Get the modal
-    let modal = document.getElementById('Modalimage');
-    //Get the image and insert it inside the modal - use its "alt" text as a caption
-    let img = document.getElementById('myImg');
-    let modalImg = document.getElementById("img01");
-    let captionText = document.getElementById("caption");
+    // Get the modal
+    const modal = document.querySelector('#Modalimage');
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    const img = document.querySelector('#myImg');
+    const modalImg = document.querySelector('#img01');
+    const captionText = document.querySelector('#caption');
     img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
-//Get the <span> element that closes the modal
-    let span = document.getElementsByClassName("close")[0];
-//When the user clicks on <span> (x), close the modal
+// Get the <span> element that closes the modal
+    const span = document.querySelectorAll('.close')[0];
+// When the user clicks on <span> (x), close the modal
     span.onclick = function() { 
         modal.style.display = "none";
     }
 }
 
-//Scroll indicator
+// Scroll indicator
 // When the user scrolls the page, execute myFunction
 function indicator() {
     window.onscroll = function() {ScrollFunction()};
     function ScrollFunction() {
-        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         let scrolled = (winScroll / height) * 100;
-        document.getElementById("ScrollBar").style.width = scrolled + "%";
+        document.querySelector("#ScrollBar").style.width = scrolled + "%";
         }
 }
 indicator()
