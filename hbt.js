@@ -1,11 +1,11 @@
-/*JQuery*/
+// JQuery
 $.noConflict()
 jQuery(document).ready(function($) {
     
 })
 
-/*JavaScript*/
-//Sticky menu background
+// JavaScript
+// Sticky menu background
 window.addEventListener('scroll', function() {
     if (window.scrollY > 51) {
         document.querySelector('.header').style.opacity = 0.9;
