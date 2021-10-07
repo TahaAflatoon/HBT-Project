@@ -21,12 +21,12 @@ function Geolocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
     else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        x.innerHTML = 'Geolocation is not supported by this browser.';
 }
 }
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
+    x.innerHTML = 'Latitude: ' + position.coords.latitude + 
+    '<br>Longitude: ' + position.coords.longitude;
 }
 
 // Modal image
@@ -38,7 +38,7 @@ function Modal() {
     const modalImg = document.querySelector('#img01');
     const captionText = document.querySelector('#caption');
     img.onclick = function(){
-    modal.style.display = "block";
+    modal.style.display = 'block';
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
@@ -46,7 +46,7 @@ function Modal() {
     const span = document.querySelectorAll('.close')[0];
 // When the user clicks on <span> (x), close the modal
     span.onclick = function() { 
-        modal.style.display = "none";
+        modal.style.display = 'none';
     }
 }
 
@@ -56,10 +56,9 @@ function indicator() {
     window.onscroll = function() {ScrollFunction()};
     function ScrollFunction() {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        let scrolled = (winScroll / height) * 100;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
         document.querySelector("#ScrollBar").style.width = scrolled + "%";
         }
 }
 indicator()
-/*-----------*/
