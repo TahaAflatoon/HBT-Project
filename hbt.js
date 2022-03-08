@@ -22,7 +22,7 @@ function Geolocation() {
     }
     else {
         x.innerHTML = 'Geolocation is not supported by this browser.';
-}
+    }
 }
 function showPosition(position) {
     x.innerHTML = 'Latitude: ' + position.coords.latitude + 
@@ -43,10 +43,8 @@ function Modal() {
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
-
 // Get the <span> element that closes the modal
     const span = document.querySelectorAll('.close')[0];
-
 // When the user clicks on <span> (x), close the modal
     span.onclick = function() { 
         modal.style.display = 'none';
